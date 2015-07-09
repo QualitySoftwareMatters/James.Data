@@ -15,10 +15,10 @@ namespace James.Data.Grinding
 
 		public void BeforeGrinding()
 		{
-			BeforeGrinding(_output);
+			OutputBeforeGrinding(_output);
 		}
 
-		protected virtual void BeforeGrinding(StringBuilder output)
+		protected virtual void OutputBeforeGrinding(StringBuilder output)
 		{ }
 
 		public void GrindRow(dynamic row)
@@ -30,11 +30,11 @@ namespace James.Data.Grinding
 
 		public void AfterGrinding()
 		{
-			AfterGrinding(_output);
+			OutputAfterGrinding(_output);
 			File.WriteAllText(_outputFilePath, _output.ToString());
 		}
 
-		protected virtual void AfterGrinding(StringBuilder output)
+		protected virtual void OutputAfterGrinding(StringBuilder output)
 		{ }
 	}
 }

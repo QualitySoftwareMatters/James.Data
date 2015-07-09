@@ -12,7 +12,7 @@ namespace James.Data.Sample
 		{
 		}
 
-		protected override void BeforeGrinding(StringBuilder output)
+		protected override void OutputBeforeGrinding(StringBuilder output)
 		{
 			var headers = new[]
 			{
