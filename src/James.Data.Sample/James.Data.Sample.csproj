@@ -51,8 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PersonConsoleDataRowGrinder.cs" />
-    <Compile Include="PersonDataRowGrinder.cs" />
+    <Compile Include="PersonCsvDataRowGrinder.cs" />
     <Compile Include="PersonDataRowProvider.cs" />
+    <Compile Include="PersonXmlDataRowGrinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

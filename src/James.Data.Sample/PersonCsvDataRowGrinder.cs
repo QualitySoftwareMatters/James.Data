@@ -5,10 +5,10 @@ using James.Data.Grinding;
 
 namespace James.Data.Sample
 {
-	public class PersonDataRowGrinder : TextFileOutputDataRowGrinder
+	public class PersonCsvDataRowGrinder : TextFileOutputDataRowGrinder
 	{
-		public PersonDataRowGrinder()
-			: base(@"c:\person.csv")
+		public PersonCsvDataRowGrinder()
+			: base(@"c:\people.csv")
 		{
 		}
 

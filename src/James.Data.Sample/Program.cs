@@ -12,7 +12,8 @@ namespace James.Data.Sample
 			IDataRowGrinder[] grinders =
 			{
 				new PersonConsoleDataRowGrinder(), 
-				new PersonDataRowGrinder()
+				new PersonCsvDataRowGrinder(),
+				new PersonXmlDataRowGrinder(), 
 			};
 			var engine = new GrindingEngine(provider, grinders);
 			engine.Grind();

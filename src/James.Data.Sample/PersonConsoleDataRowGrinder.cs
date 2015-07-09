@@ -13,7 +13,7 @@ namespace James.Data.Sample
 
 		protected override void AfterGrinding(TextWriter console)
 		{
-			console.WriteLine(@"Output file is located at:  c:\person.csv");
+			console.WriteLine(@"Output file(s) are located at:  c:\people.csv, c:\people.xml");
 		}
 	}
 }
