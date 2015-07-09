@@ -3,9 +3,9 @@ using System.IO;
 
 namespace James.Data.Grinding
 {
-    public abstract class ConsoleDataRowGrinder : IDataRowGrinder
+    public class ConsoleDataRowGrinder : IDataRowGrinder
     {
-	    public void BeforeGrinding()
+	    public virtual void BeforeGrinding()
 	    {
 			Console.WriteLine("Beginning to grind.");
 	    }
@@ -18,7 +18,7 @@ namespace James.Data.Grinding
 		protected virtual void GrindRow(dynamic row, TextWriter console)
 		{ }
 
-	    public void AfterGrinding()
+	    public virtual void AfterGrinding()
 	    {
 			Console.WriteLine("Done grinding.");
 	    }

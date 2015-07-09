@@ -8,11 +8,11 @@ namespace James.Data.Sample
 	{
 		static void Main(string[] args)
 		{
-			var provider = new RepriceDetailRowProvider();
+			var provider = new PersonDataRowProvider();
 			IDataRowGrinder[] grinders =
 			{
-				new RepriceDetailTextFileOutputDataRowGrinder(),
-				new RepriceDetailConsoleDataRowGrinder()
+				new PersonConsoleDataRowGrinder(), 
+				new PersonDataRowGrinder()
 			};
 			var engine = new GrindingEngine(provider, grinders);
 			engine.Grind();
