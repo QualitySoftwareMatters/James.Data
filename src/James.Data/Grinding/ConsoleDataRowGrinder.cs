@@ -5,10 +5,14 @@ namespace James.Data.Grinding
 {
     public class ConsoleDataRowGrinder : IDataRowGrinder
     {
-	    public virtual void BeforeGrinding()
+	    public void BeforeGrinding()
 	    {
 			Console.WriteLine("Beginning to grind.");
+		    BeforeGrinding(Console.Out);
 	    }
+
+		protected virtual void BeforeGrinding(TextWriter console)
+		{ }
 
 	    public void GrindRow(dynamic row)
 	    {
@@ -18,9 +22,13 @@ namespace James.Data.Grinding
 		protected virtual void GrindRow(dynamic row, TextWriter console)
 		{ }
 
-	    public virtual void AfterGrinding()
+	    public void AfterGrinding()
 	    {
+			AfterGrinding(Console.Out);
 			Console.WriteLine("Done grinding.");
 	    }
+
+		protected virtual void AfterGrinding(TextWriter console)
+		{ }
     }
 }

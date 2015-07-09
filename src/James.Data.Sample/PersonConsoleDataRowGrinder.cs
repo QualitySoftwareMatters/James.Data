@@ -1,4 +1,6 @@
-﻿using James.Data.Grinding;
+﻿using System.IO;
+
+using James.Data.Grinding;
 
 namespace James.Data.Sample
 {
@@ -9,5 +11,9 @@ namespace James.Data.Sample
 			console.WriteLine("Person:  {0} {1}", row.FirstName, row.LastName);
 		}
 
+		protected override void AfterGrinding(TextWriter console)
+		{
+			console.WriteLine(@"Output file is located at:  c:\person.csv");
+		}
 	}
 }
