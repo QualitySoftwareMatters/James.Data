@@ -10,7 +10,7 @@
 		<licenseUrl>https://github.com/QualitySoftwareMatters/James.Diagnostics/blob/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/QualitySoftwareMatters/James.Diagnostics</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<releaseNotes><![CDATA[Alpha commit.]]></releaseNotes>
+		<releaseNotes><![CDATA[Virtualized some methods on the ConsoleDataRowGrinder for more client flexibility.]]></releaseNotes>
 		<copyright>$copyright</copyright>
 		<tags>Data, Analysis</tags>
 	</metadata>
